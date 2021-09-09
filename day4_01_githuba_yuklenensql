@@ -100,12 +100,11 @@ SELECT sirket_adi, personel_sayisi, (SELECT ROUND(AVG(maas)) FROM personel
                                       (SELECT MIN(maas) from personel
                                       WHERE sirket_adi=sirket) AS min_maas
   FROM sirketler;
-    
-    
+
+
   --  ORNEK7: Her sirketin id’sini, ismini ve toplam kaç þehirde bulunduðunu 
 --  listeleyen bir SORGU yazýnýz.
 ?
 SELECT sirket_id, sirket_adi, (SELECT COUNT(sehir) FROM personel
-                                     WHERE sirket=sirket_adi) AS sehir_sayisi
-?
+WHERE sirket=sirket_adi) AS sehir_sayisi
 FROM sirketler;
