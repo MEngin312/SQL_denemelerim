@@ -1,8 +1,8 @@
 --UPDATE - SET----
-
+?
  /*Aþaðýdaki gibi tedarikciler adýnda bir tablo oluþturunuz ve vergi_no
    sutununu primary key yapýnýz. Ayrýca aþaðýdaki verileri tabloya giriniz.
-
+?
     vergi_no NUMBER(3),
     firma_ismi VARCHAR2(50),
     irtibat_ismi VARCHAR2(50),
@@ -119,3 +119,7 @@
  )
  WHERE musteri_isim='Ali Bak';
  
+ 
+-- ORNEK8: Laptop satin alan musterilerin ismini, Apple’in irtibat_isim'i ile 
+ --degistirin
+?

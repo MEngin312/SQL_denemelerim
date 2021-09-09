@@ -1,0 +1,23 @@
+--ORNEK1- NOT NULL
+   -- ogrenciler tablosu olusturalim ve id field ýný bos birakilamaz yapalim
+  CREATE TABLE ogrenciler (
+  id char(4) not null,
+  isim varchar(50),
+  not_ort number(4,2), --98,55
+  kayit_tarihi date
+  );
+  INSERT INTO ogrenciler VALUES('1234','hasan',75.25,'14-01-2020');
+  INSERT INTO ogrenciler VALUES('1234','ayse',null,null);
+  INSERT INTO ogrenciler (id,isim) VALUES('3456','fatma');
+  INSERT INTO ogrenciler VALUES(null,'osman',45.25,'5-01-2020');--ORA-01400: cannot insert NULL into ("HR"."OGRENCILER"."ID")
+  SELECT * FROM ogrenciler;
+  --ORNEK2 UNIQUE
+  --tedarikciler olusturalim id unique olsun
+
+create table tedarikciler
+  (
+  id char(4) UNIQUE,
+  isim varchar(50),
+  adres varchar(100),
+  tarih date
+);

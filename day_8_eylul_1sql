@@ -1,0 +1,13 @@
+-- izmirde calisan Veli YIlmaz'in maasini 2000 yapin
+?
+UPDATE personel3
+SET maas=2000
+WHERE sehir='Izmir' AND isim='Veli Yilmaz';
+?
+-- personel sayisi 10000 olan sirketten personel  tablosunda bulunan kisinin maasini 6000 yapin
+?
+UPDATE personel
+SET maas=6000
+WHERE sirket=( SELECT sirket      -- Hyundai
+                            FROM sirketler
+                            WHERE personel_sayisi=10000); 

@@ -1,0 +1,19 @@
+-- izmir,istanbul veya bursada personeli bulunan sirketlerin calisan sayilarini listeleyin
+SELECT personel_sayisi
+FROM sirketler
+WHERE sirket IN (  SELECT sirket
+                                FROM personel
+                                WHERE sehir IN ('Istanbul','Izmir','Bursa'));
+
+-- sirket id, sirket ismi, sirketteki min maas, sirketteki max maas, sirketteki ort.maas lari yazdirin 
+?
+SELECT sirket_id,sirket,(SELECT MIN(maas)
+                                        FROM personel
+                                        WHERE sirketler.sirket=personel3.sirket)AS min_maas,
+                                        (SELECT MAX(maas)
+                                        FROM personel
+                                        WHERE sirketler.sirket=personel3.sirket)AS max_maas,
+                                        (SELECT AVG(maas)
+                                        FROM personel
+                                        WHERE sirketler.sirket = personel3.sirket) AS ort_maas
+FROM sirketler;
