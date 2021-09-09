@@ -1,0 +1,200 @@
+
+Table PERSONEL created.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+>>Query Run In:Query Result 7
+
+Table SIRKETLER created.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+Error starting at line : 33 in command -
+?
+Error report -
+Unknown Command
+
+Additional Error: Original command contained "Unicode u200B"
+SP2-0044: For a list of known commands enter HELP
+and to leave enter EXIT.
+>>Query Run In:Query Result 8
+>>Query Run In:Query Result 9
+
+Error starting at line : 4 in command -
+CREATE TABLE personel 
+    (
+        id NUMBER(9), 
+        isim VARCHAR2(50), 
+        sehir VARCHAR2(50), 
+        maas NUMBER(20), 
+        sirket VARCHAR2(20)
+    )
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+>>Query Run In:Query Result 10
+
+Error starting at line : 22 in command -
+CREATE TABLE sirketler
+    (
+        sirket_id NUMBER(9), 
+        sirket_adi VARCHAR2(20), 
+        personel_sayisi NUMBER(20)
+    )
+Error report -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+Error starting at line : 33 in command -
+?
+Error report -
+Unknown Command
+
+Additional Error: Original command contained "Unicode u200B"
+>>Query Run In:Query Result 11
+
+Table PERSONEL dropped.
+
+
+Table SIRKETLER dropped.
+
+
+Table SIRKETLER created.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+Error starting at line : 33 in command -
+?
+Error report -
+Unknown Command
+
+Additional Error: Original command contained "Unicode u200B"
+>>Query Run In:Query Result 12
+
+Table SIRKETLER dropped.
+
+
+Table SIRKETLER created.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+Error starting at line : 33 in command -
+?
+Error report -
+Unknown Command
+
+Additional Error: Original command contained "Unicode u200B"
+>>Query Run In:Query Result 13
+>>Query Run In:Query Result 14
+
+Error starting at line : 44 in command -
+    DROP TABLE personel
+Error report -
+ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+
+Table SIRKETLER dropped.
+

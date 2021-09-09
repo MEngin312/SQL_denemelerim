@@ -1,0 +1,20 @@
+CREATE TABLE sirket
+(
+emp_ID CHAR(3),
+first_name VARCHAR(20),
+last_name VARCHAR(20),
+birth_day CHAR (10),
+gender CHAR (1),
+salary NUMBER,
+job_ID_number NUMBER
+);
+INSERT INTO sirket VALUES ('100','JAN','DAN','1962-05-11','F','8000','13');
+INSERT INTO sirket VALUES ('101','TAN','SAN','1964-08-12','M','7000','12');
+INSERT INTO sirket VALUES ('102','VAN','GAN','1969-02-13','F','6000','11');
+INSERT INTO sirket VALUES ('103','FAN','MAN','1976-06-14','M','5000','10');
+
+    INSERT INTO sirket(emp_ID, first_name,last_name,salary) VALUES ('104','ZAN','REN',4000);
+     SELECT
+    * FROM sirket;
+   
+     DROP TABLE sirket;
